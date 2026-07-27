@@ -1,0 +1,31 @@
+*{
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#projects-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.project{
+    padding: 20px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 600px){
+    #projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px){
+    #projects-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
