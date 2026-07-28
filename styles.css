@@ -1,13 +1,32 @@
+:root{
+    font-size: 10px;
+    --project-spacing: 2rem;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
 }
 
 #projects-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--project-spacing);
+    padding: var(--project-spacing);
 }
 
 .project{
