@@ -9,12 +9,12 @@ let blurbShort = true;
 blurbBtn.addEventListener("click", () => {
     if(blurbShort){
         blurbShort = false;
-        blurbBtn.textContent = "Collapse";
+        blurbBtn.textContent = "←";
         blurb.textContent = fullBlurb;
     }
     else{
         blurbShort = true;
-        blurbBtn.textContent = "Learn More";
-        blurb.textContent = partialBlurb;
+        blurbBtn.textContent = "→";
+        blurb.textContent = partialBlurb + "...";
     }
 })
