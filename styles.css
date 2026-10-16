@@ -18,6 +18,7 @@ h1{
 h2{
     font-size: 2.6rem;
     margin-top: 30px;
+    text-align: center;
 }
 
 h3{
@@ -32,29 +33,36 @@ header{
 
 #blurb-container{
     position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1rem 3rem;
     font-size: 1.8rem;
     line-height: 1.5;
+}
+
+#blurb{
+    position: relative;
     text-align: left;
-    padding-right: 50px;
-    padding-left: 50px;
 }
 
-#blurb-container-inner::before, #blurb-container-inner::after{
-    color: lightskyblue;
-    font-size: 1.8rem;
+#blurb::before, #blurb::after{
     position: absolute;
+    color: lightskyblue;
+    font-size: 2rem;
+    line-height: 1;
 }
 
-#blurb-container-inner::before{
+#blurb::before{
     content: "❝";
-    top: -3vw;
-    left: 4vw;
+    top: -0.5rem;
+    left: -2.5rem;
 }
 
-#blurb-container-inner::after{
+#blurb::after{
     content: "❞";
-    bottom: -3vw;
-    right: 7vw;
+    bottom: -0.5rem;
+    right: -2rem;
 }
 
 #blurb-btn{
@@ -64,8 +72,7 @@ header{
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background: transparent;
-    color: white;
-    border: 1px solid white;
+    color: lightskyblue;
     border-radius: 20px;
     font: inherit;
     font-size: 1.5rem;
