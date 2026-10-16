@@ -225,6 +225,18 @@ header{
     #projects-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #name-banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 5rem;
+    }
+
+    #profile-links{
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 900px){

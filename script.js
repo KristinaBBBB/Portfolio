@@ -27,6 +27,7 @@ function updateBlurbLayout(){
     if (desktopQuery.matches){
         blurb.textContent = fullBlurb;
         blurbBtn.hidden = true;
+        blurbBtn.setAttribute("aria-expanded", "true");
     }
     else{
         blurb.textContent = blurbShort ? partialBlurb + "..." : fullBlurb;
@@ -34,3 +35,6 @@ function updateBlurbLayout(){
         blurbBtn.setAttribute("aria-expanded", String(!blurbShort));
     }
 }
+
+updateBlurbLayout();
+desktopQuery.addEventListener("change", updateBlurbLayout);
