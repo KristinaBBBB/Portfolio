@@ -27,7 +27,7 @@ h3{
 }
 
 header{
-    background-color: var(--accent-color);
+    background-color: #27334F;
     color: white;
     display: flex;
     flex-direction: column;
@@ -76,8 +76,13 @@ header{
     width: fit-content;
     height: auto;
     margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    background: transparent;
+    padding: 0.3rem 0;
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
     color: lightskyblue;
     font: inherit;
     font-size: 1.5rem;
