@@ -27,6 +27,16 @@ h2{
     text-align: center;
 }
 
+projects h2::after{
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 3px;
+    background-color: var(--highlight-color);
+    border-radius: 3px;
+    margin: 1rem auto 0;
+}
+
 h3{
     font-size: 3vw;
 }
