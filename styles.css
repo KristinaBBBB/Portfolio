@@ -1,7 +1,11 @@
 :root{
     font-size: 10px;
     --project-spacing: 3rem;
-    --accent-color: midnightblue;
+    --accent-color: #191970;
+    --section-bg: #F4F6F9;
+    --highlight-color: #75BDF2;
+
+
 }
 
 *{
@@ -17,8 +21,9 @@ h1{
 }
 
 h2{
+    color: var(--accent-color);
     font-size: 2.6rem;
-    margin-top: 30px;
+    margin: 0 0 2rem;
     text-align: center;
 }
 
@@ -27,16 +32,25 @@ h3{
 }
 
 header{
-    background-color: #27334F;
-    color: white;
+    background: white;
+    color: var(--accent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    padding: 0;
+}
+
+#name-banner{
+    background-color: var(--accent-color);
+    color: white;
     padding: 3rem 2rem;
 }
 
 #blurb-container{
+    background-color: white;
+    color: var(--accent-color);
+    padding: 3rem 5rem;
     position: relative;
     width: 100%;
     max-width: 650px;
@@ -54,7 +68,7 @@ header{
 
 #blurb::before, #blurb::after{
     position: absolute;
-    color: lightskyblue;
+    color: var(--highlight-color);
     font-size: 2rem;
     line-height: 1;
 }
@@ -83,7 +97,7 @@ header{
     border-radius: 0;
     box-shadow: none;
 
-    color: lightskyblue;
+    color: var(--accent-color);
     font: inherit;
     font-size: 1.5rem;
     cursor: pointer;
@@ -119,6 +133,11 @@ header{
 
 #profile-links i{
     font-size: 1.8rem;
+}
+
+#projects{
+    background-color: var(--section-bg);
+    padding: 3rem 0;
 }
 
 #projects-container{
