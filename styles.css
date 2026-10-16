@@ -13,6 +13,7 @@
 h1{
     font-size: 3rem;
     padding: 0;
+    text-align: center;
 }
 
 h2{
@@ -81,11 +82,6 @@ header{
     font: inherit;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-#blurb-btn:hover, #blurb-btn:focus, #profile-links a:hover, #profile-links a:focus{
-    background-color: white;
-    color: var(--accent-color);
 }
 
 #profile-links{
@@ -188,5 +184,12 @@ header{
 @media screen and (min-width: 900px){
     #projects-container{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (hover: hover) and (pointer: fine){
+    #blurb-btn:hover, #blurb-btn:focus, #profile-links a:hover, #profile-links a:focus{
+        background-color: white;
+        color: var(--accent-color);
     }
 }
