@@ -1,6 +1,7 @@
 :root{
     font-size: 10px;
     --project-spacing: 3rem;
+    --accent-color: midnightblue;
 }
 
 *{
@@ -24,6 +25,12 @@ h3{
     font-size: 3vw;
 }
 
+header{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 4rem 2rem;
+}
+
 #blurb-container{
     position: relative;
     font-size: 1.8rem;
@@ -34,7 +41,7 @@ h3{
 }
 
 #blurb-container::before, #blurb-container::after{
-    color: midnightblue;
+    color: lightskyblue;
     font-size: 1.4rem;
     position: absolute;
 }
@@ -58,12 +65,36 @@ h3{
     margin-top: 1rem;
     padding: o.6rem 1.2rem;
     background: transparent;
-    color: midnightblue;
-    border: 1px solid midnightblue;
+    color: white;
+    border: 1px solid white;
     border-radius: 20px;
     font: inherit;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+#blurb-btn:hover{
+    background-color: white;
+    color: var(--accent-color);
+}
+
+#proile-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#profile-links a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: backgroud-color 0.2s ease, color 0.2 ease;
 }
 
 #projects-container{
@@ -76,7 +107,7 @@ h3{
 .project{
     padding: 20px;
     border: 1px solid black;
-    background-color: midnightblue;
+    background-color: var(--accent-color);
     width: 100%;
     border-radius: 10px;
 }
