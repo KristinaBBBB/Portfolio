@@ -39,19 +39,19 @@ header{
     padding-left: 50px;
 }
 
-#blurb-container::before, #blurb-container::after{
+#blurb-container-inner::before, #blurb-container-inner::after{
     color: lightskyblue;
     font-size: 1.8rem;
     position: absolute;
 }
 
-#blurb-container::before{
+#blurb-container-inner::before{
     content: "❝";
     top: -3vw;
     left: 4vw;
 }
 
-#blurb-container::after{
+#blurb-container-inner::after{
     content: "❞";
     bottom: -3vw;
     right: 7vw;
