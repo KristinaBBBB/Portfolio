@@ -15,7 +15,7 @@
 }
 
 h1{
-    font-size: 3rem;
+    font-size: clamp(3.6rem, 5vw, 5rem);
     padding: 0;
     text-align: center;
 }
@@ -293,7 +293,7 @@ header{
         justify-content: center;
         align-items: center;
         background-color: var(--accent-color);
-        padding: 4rem 6rem;
+        padding: 4rem max(4rem, calc((100% - 1300px) / 2));
         gap: 6rem;
     }
 
@@ -312,12 +312,12 @@ header{
         text-align: left;
     }
 
-    profile-links{
+    .profile-links{
         justify-content: flex-start;
         margin-top: 2rem;
     }
 
-    blurb-container{
+    #blurb-container{
         flex: 1.2;
         min-width: 0;
         width: auto;
