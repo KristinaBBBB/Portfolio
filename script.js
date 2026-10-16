@@ -9,12 +9,14 @@ let blurbShort = true;
 blurbBtn.addEventListener("click", () => {
     if(blurbShort){
         blurbShort = false;
-        blurbBtn.textContent = "←";
+        blurbBtn.innerHTML = 'Show Less <span aria-hidden="true">⌃</span>';
         blurb.textContent = fullBlurb;
     }
     else{
         blurbShort = true;
-        blurbBtn.textContent = "→";
+        blurbBtn.innerHTML = 'Read More <span aria-hidden="true">⌄</span>';
         blurb.textContent = partialBlurb + "...";
     }
+
+    blurbBtn.setAttribute("aria-expanded", String(!blurbShort));
 })

@@ -34,7 +34,8 @@ h3{
 }
 
 #blurb-container::before, #blurb-container::after{
-    font-size: 7vw;
+    color: midnightblue;
+    font-size: 1.4rem;
     position: absolute;
 }
 
@@ -51,10 +52,18 @@ h3{
 }
 
 #blurb-btn{
-    width: 5vw;
-    height: 2.5vh;
-    background-color: midnightblue;
-    color: white;
+    display: block;
+    width: fit-content;
+    height: auto;
+    margin-top: 1rem;
+    padding: o.6rem 1.2rem;
+    background: transparent;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+    border-radius: 20px;
+    font: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #projects-container{
