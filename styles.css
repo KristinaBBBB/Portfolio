@@ -89,6 +89,10 @@ header{
     cursor: pointer;
 }
 
+#blurb-btn[hidden]{
+    display: none;
+}
+
 #profile-links{
     margin-top: 2rem;
     display: flex;
@@ -102,7 +106,7 @@ header{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 0.7rem;
 
     padding: 0.8rem 1.4rem;
     border: 1px solid white;

@@ -19,4 +19,18 @@ blurbBtn.addEventListener("click", () => {
     }
 
     blurbBtn.setAttribute("aria-expanded", String(!blurbShort));
-})
+});
+
+const desktopQuery = window.matchMedia("(min-width: 800px)");
+
+function updateBlurbLayout(){
+    if (desktopQuery.matches){
+        blurb.textContent = fullBlurb;
+        blurbBtn.hidden = true;
+    }
+    else{
+        blurb.textContent = blurbShort ? partialBlurb + "..." : fullBlurb;
+        blurbBtn.hidden = false;
+        blurbBtn.setAttribute("aria-expanded", String(!blurbShort));
+    }
+}
