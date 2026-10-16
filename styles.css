@@ -224,7 +224,7 @@ header{
 @media screen and (min-width: 500px) and (max-width: 849px){
     .project-link{
         display: grid;
-        grid-template-columns: minmaw(0, 2fr) minmax(0, 3fr);
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
         column-gap: 2rem;
         align-items: start;
     }
@@ -251,7 +251,7 @@ header{
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 750px) and (max-width: 1249px){
     #name-banner{
         display: flex;
         flex-direction: row;
@@ -278,6 +278,46 @@ header{
 }
 
 @media screen and (min-width: 1250px){
+    header{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--accent-color);
+        padding: 4rem 6rem;
+        gap: 6rem;
+    }
+
+    #name-banner h1{
+        flex: 1;
+        width: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #name-banner h1{
+        text-align: left;
+    }
+
+    profile-links{
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+
+    blurb-container{
+        flex: 1.2;
+        min-width: 0;
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding: 0 3rem;
+        background-color: transparent;
+        color: white;
+    }
+
     #projects-container{
         grid-template-columns: repeat(3, minmax(0, 1fr));
         max-width: 1300px;
