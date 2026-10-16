@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 h1{
@@ -63,7 +62,7 @@ header{
     width: fit-content;
     height: auto;
     margin-top: 1rem;
-    padding: o.6rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     background: transparent;
     color: white;
     border: 1px solid white;
@@ -73,12 +72,12 @@ header{
     cursor: pointer;
 }
 
-#blurb-btn:hover{
+#blurb-btn:hover, #blurb-btn:focus, #profile-links a:hover, #profile-links a:focus{
     background-color: white;
     color: var(--accent-color);
 }
 
-#proile-links{
+#profile-links{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -94,7 +93,7 @@ header{
     color: white;
     text-decoration: none;
     font-size: 1.6rem;
-    transition: backgroud-color 0.2s ease, color 0.2 ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 #projects-container{
@@ -139,7 +138,7 @@ header{
 .project-image{
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -152,7 +151,7 @@ header{
 }
 
 .view-project{
-    self-align: flex-start;
+    align-self: flex-start;
     margin-top: auto;
     font-size: 1.5rem;
 }
@@ -164,7 +163,7 @@ header{
     transition: transform 0.2s ease;
 }
 
-.project-link:hover::after, .project-link:focus::after{
+.project-link:hover .view-project::after, .project-link:focus-visible .view-project::after {
     transform: translateX(5px);
 }
 
