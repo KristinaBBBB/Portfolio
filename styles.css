@@ -223,7 +223,7 @@ header{
 
 @media screen and (min-width: 600px){
     #projects-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     #name-banner{
@@ -231,11 +231,17 @@ header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 5rem;
+        gap: 2rem;
+        padding: 3rem;
     }
 
     #profile-links{
         margin-top: 0;
+    }
+
+    .project-image{
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
 }
 
@@ -247,12 +253,6 @@ header{
         gap: 4rem;
         padding: 4rem;
     }
-
-    .project-image{
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    }
-
 }
 
 @media (hover: hover) and (pointer: fine){
@@ -262,7 +262,7 @@ header{
     }
 
     #blurb-btn:hover, #blurb-btn:focus{
-        background-color: #376BA7;
+        color: #376BA7;
         text-decoration: underline;
     }
 }
