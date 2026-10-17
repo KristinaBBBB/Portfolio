@@ -272,6 +272,10 @@ header{
 }
 
 @media screen and (min-width: 850px){
+    #projects h2{
+        font-size: 3.2rem;
+    }
+
     #projects-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -288,7 +292,7 @@ header{
         justify-content: center;
         align-items: center;
         background-color: var(--accent-color);
-        padding: 4rem max(4rem, calc((100% - 1300px) / 2));
+        padding: 4rem max(4rem, calc((100% - 1200px) / 2));
         gap: 6rem;
     }
 
@@ -322,12 +326,30 @@ header{
         color: white;
     }
 
+    #blurb{
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    #projects h2{
+        font-size: 3.6rem;
+    }
+
+    #projects h2::after{
+        width: 8rem;
+        height: 3px;
+    }
+
     #projects-container{
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        max-width: 1300px;
+        max-width: 1280px;
         margin: 0 auto;
         gap: 4rem;
         padding: 4rem;
+    }
+
+    .project-link{
+        gap: 2rem;
     }
 }
 
