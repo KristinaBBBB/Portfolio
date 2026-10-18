@@ -216,8 +216,20 @@ header{
     transform: translateX(5px);
 }
 
-footer p{
-    font-size: 1.4rem;
+footer{
+    color: var(--accent-color);
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+footer a{
+    color: inherit;
+    text-underline-offset: 3px;
+}
+
+footer a:hover, footer a:focus{
+    color: var(--highlight-color);
 }
 
 @media screen and (min-width: 500px) and (max-width: 849px){
