@@ -184,6 +184,12 @@ header{
     text-align: center;
 }
 
+.project-picture{
+    display: block;
+    width: 100%;
+    min-width: 0;
+}
+
 .project-image{
     display: block;
     width: 100%;
@@ -259,6 +265,11 @@ footer a:hover, footer a:focus{
         grid-column: 1;
         grid-row: 2 / 4;
         aspect-ratio: 1 / 1;
+    }
+
+    .project-picture{
+        grid-column: 1;
+        grid-row: 2 / 4;
     }
 
     .project-description{
