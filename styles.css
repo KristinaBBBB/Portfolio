@@ -216,6 +216,10 @@ header{
     transform: translateX(5px);
 }
 
+footer p{
+    font-size: 1.4rem;
+}
+
 @media screen and (min-width: 500px) and (max-width: 849px){
     .project-link{
         display: grid;
@@ -350,6 +354,10 @@ header{
 
     .project-link{
         gap: 2rem;
+    }
+
+    footer{
+        padding: 4rem max(4rem, calc((100% - 1200px) / 2));
     }
 }
 
