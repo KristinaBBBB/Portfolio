@@ -16,7 +16,7 @@ A personal portfolio website I developed from scratch to showcase my software de
 
 ## Running Locally
 1. Clone the repository:
-   git clone https://github.com/KristinaBBBB/Portfolio.git
+   ```git clone https://github.com/KristinaBBBB/Portfolio.git```
 4. Open index.html in a web browser.
 
 ## About This Project
