@@ -223,11 +223,12 @@ header{
 }
 
 footer{
-    padding: 20px;
+    padding: 3rem;
     color: var(--accent-color);
     font-family: inherit;
     font-size: 1.3rem;
     line-height: 1.5;
+    margin-top: -10px;
 }
 
 footer a{
