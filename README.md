@@ -18,9 +18,10 @@ A personal portfolio website I developed from scratch to showcase my software de
 1. Clone the repository:
    ```bash
    git clone https://github.com/KristinaBBBB/Portfolio.git
+   cd Portfolio
    ```
    
-2. Open index.html in a web browser.
+2. Open `index.html` in a web browser.
 
 ## About This Project
 I built this website both as a place to showcase my work and as an opportunity to practice responsive web development without relying on frameworks. The design and implementation are my own, and I plan to continue updating the site as I complete new projects.
